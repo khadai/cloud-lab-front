@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/background.css"> -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/10c538d4b7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+</head>
+
+<body>
+    <a href="/" class="main-title">
+      Vending Machines
+    </a>
+   
+  
+    <div id="content">
+        <content id="content-table">
+            <div id="in-table"></div>
+                
+            </div>
+        </content>
+    </div>
+    
+<h2>new vending</h2>
+
+<form method="POST">
+    <label>
+        <div>vending name</div>
+        <input id="vending_name" type="text" name="vending_name" required>
+    </label>
+    <label>
+            <div>image url</div>
+            <input id="image_url" type="url" name="image_url" >
+    </label>
+    <label>
+        <div>address</div>
+        <input id="address" type="text" name="address" required>
+    </label>
+    <label lang="en-US">
+        <div>latitude</div>
+        <input id="lat" type="number" name="latitude"  step="any" required>
+    </label>
+    <label lang="en-US">
+        <div>longitude</div>
+        <input id="lng" type="number" name="longitude" step="any" required>
+    </label>
+    <label>
+        <div>available trademarks</div>
+        <input id="trademarks" type="text" name="trademarks" required>
+    </label>
+    <label>
+        <div>number of available goods</div>
+        <input id="available_goods" type="number" name="available_goods" min="0" required>
+    </label>
+    <label>
+        <div>number of sold goods</div>
+        <input id="sold_goods" type="number" name="sold_goods" min="0" required>
+    </label>
+
+    <input type="button" onclick="addData()" name="Submit"
+    value="Add data" class="submit-feedback">
+</form>
+  </body>
+
+
+
+<script>get_all_data()</script>
+</html>
